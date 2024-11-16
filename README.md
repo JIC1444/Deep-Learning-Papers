@@ -32,16 +32,13 @@ This paper
 
 
 [A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) (Claude Shannon)
-In this paper Shannon essentially established the field of Information Therory (there were earlier works in the 1920's). I first encountered Shannon's work in biology _Shannon's Diversity index_ is originally a equation in entropy
+In this paper Shannon essentially established the field of Information Therory (there were earlier works in the 1920's). I first encountered Shannon's work in biology _Shannon's Diversity index_ is originally a equation in entropy , which actually was defined in this very paper.
 
 
 # Meta-Learning Papers
 [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439) (Timothy Hospedales, Antreas Antoniou, Paul Micaelli, Amos Storkey)
 
-Hospedales et. al describe Meta-learning as a potential candidate to combat the data inefficiencies, poor knowledge transfer 
-and unsupervised learning aspects of DNNs in research at the moment. There are different interpretations of the phrase 'meta-
-learning' but the paper focuses on **contemporary *neural network* meta-learning**. Meaning "algorithm learning, but focus 
-on where this is achieved by end-to-end learning of an explicitly defined objective function (such as cross-entropy loss)".
+Hospedales et. al describe Meta-learning as a potential candidate to combat the data inefficiencies, poor knowledge transfer and unsupervised learning aspects of DNNs in research at the moment. There are different interpretations of the phrase 'meta-learning' but the paper focuses on **contemporary *neural network* meta-learning**. Meaning "algorithm learning, but focus on where this is achieved by end-to-end learning of an explicitly defined objective function (such as cross-entropy loss)".
 
 
 # Dissertation Papers (ATT-GCN-LSTM / COVID19)

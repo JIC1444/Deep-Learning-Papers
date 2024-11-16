@@ -25,9 +25,14 @@ brought artificial intelligence research out of its second AI winter, revolution
 The paper responisble for the LLMs today, the transformer architecture was and still is a revolutionary jump in language processing, ..., ...
 
 [Long Short-Term Memory](https://doi.org/10.1162/neco.1997.9.8.1735) (Sepp Hochreiter, Jürgen Schmidhuber)
+A highly influential architecture which eventually led to the transformer (from paper above)
 
 []() (John von Neumann)
-While not a deep learning paper, I am very interested in the foundatations of computer science - this paper
+This paper 
+
+
+[A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) (Claude Shannon)
+In this paper Shannon essentially established the field of Information Therory (there were earlier works in the 1920's). I first encountered Shannon's work in biology _Shannon's Diversity index_ is originally a equation in entropy
 
 
 # Meta-Learning Papers
@@ -53,6 +58,7 @@ on where this is achieved by end-to-end learning of an explicitly defined object
 
 
 [Attention-based LSTM predictive model for the attitude and position of shield machine in tunneling](https://www.sciencedirect.com/science/article/pii/S2467967423000880) (Kang Q, Chen EJ, Li ZC, Luo HB, Liu Y)
+
 
 
 

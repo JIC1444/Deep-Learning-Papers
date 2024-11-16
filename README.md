@@ -1,4 +1,4 @@
-# Deep-Learning-Papers
+# Maths-CS-&-ML-Papers
 A collection of my favourite papers (in no particular order) I have read in deep learning. As of now, I am inspired by research in epidemiology, spiking neural networks 
 (SNNs), meta-learning and self-pruning networks. The analysis of each paper follows a structure resembling: 
 - Title and authors

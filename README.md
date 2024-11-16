@@ -26,7 +26,8 @@ The paper responisble for the LLMs today, the transformer architecture was and s
 
 [Long Short-Term Memory](https://doi.org/10.1162/neco.1997.9.8.1735) (Sepp Hochreiter, Jürgen Schmidhuber)
 
-
+[]() (John von Neumann)
+While not a deep learning paper, I am very interested in the foundatations of computer science - this paper
 
 
 # Meta-Learning Papers

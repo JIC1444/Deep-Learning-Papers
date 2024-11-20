@@ -26,14 +26,18 @@ _**"We can only see a short distance ahead, but we can see plenty there that nee
 [ImageNet classification with deep convolutional neural networks](https://doi.org/10.1145/3065386) (Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton - 2012) The paper is synonymous with the modern deep learning revolution, it demonstrated the power of deep convolutional neural networks (CNNs), achieving performance on the ImageNet dataset previously unheard of. AlexNet was key in sparking widespread interest and research funding investments in deep learning.
 
 
-
+---
 
 [Attention is all you need](https://doi.org/10.48550/arXiv.1706.03762) (Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin) The paper responisble for the LLMs today, the transformer architecture has been a tremendous leap in natural language processing (NLP).
 
 
+---
+
 [Long Short-Term Memory](https://doi.org/10.1162/neco.1997.9.8.1735) (Sepp Hochreiter, Jürgen Schmidhuber)
 A highly influential architecture which eventually led to the transformer (from paper above), a variant of a recurrent neural network (RNN), but with a memory gate
 
+
+---
 %[]() (John von Neumann)
 
 
@@ -47,9 +51,7 @@ The effects of this paper were felt in many fields, of course Information Theory
 
 The paper is its mathematical density and abstract nature, making it a difficult task to digest and understand the brilliance held within.
 
-```{math}
-$\sum p_i log(p_i)$
-```
+---
 
 
 # Meta-Learning Papers

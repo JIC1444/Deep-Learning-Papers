@@ -8,6 +8,8 @@ A collection of my favourite papers (in no particular order) I have read concern
 - Weaknesses or limitations
 - My takeaways.
 
+My interests lie in the foundations of computer science and deep learning, as well as deep learning applied to biology/epidemiology (which is the subject of my undergraduate dissertation). I am also interested in the idea of adaptive neural networks/meta-learning as they emulate the learning process of humans well, so this page will slowly but surely be peppered with them. 
+
 # Wide-Impact Papers
 ### A collection of papers which had paradigm-shifting effects in research and or industry, with legendary status.
 

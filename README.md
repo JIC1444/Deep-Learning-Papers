@@ -1,14 +1,7 @@
 # Maths-CS-&-ML-Papers
-A collection of my favourite papers (in no particular order) I have read concerning mathematics, computer science and machine learning. The analysis of each paper follows a structure resembling: 
-- Title and authors
-- Context/history
-- Problems adressed
-- Main contributions
-- Strengths
-- Weaknesses or limitations
-- My takeaways.
+A collection of my favourite papers (in no particular order) I have read concerning mathematics, computer science and machine learning. 
 
-My interests lie in the foundations of computer science and deep learning, as well as deep learning applied to biology/epidemiology (which is the subject of my undergraduate dissertation). I am also interested in the idea of adaptive neural networks/meta-learning as they emulate the learning process of humans well, so this page will slowly but surely be peppered with them. 
+My interests lie in the foundations of computer science and deep learning, as well as deep learning applied to biology/epidemiology (which is the subject of my undergraduate dissertation). I am also interested in the idea of adaptive networks/meta-learning as they emulate the learning process of humans. Graphs are also a big interest of mine, so any research inspired by graphs interests me.
 
 # Wide-Impact Papers
 ### A collection of papers which had paradigm-shifting effects in research and or industry, with legendary status.
@@ -98,13 +91,28 @@ The authors of the paper found very good results on a small dataset, with elasti
 
 ---
 
-# Meta-Learning Papers
+# Meta-Learning and Learning Strategy Papers
 
 ---
-[Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439) (Timothy Hospedales, Antreas Antoniou, Paul Micaelli, Amos Storkey)
+
+[Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400)
+
+The goal of MAML is to create a model which emulates a human's ability to learn quickly from few examples, that can also be applied to a range of tasks with minimal weight updates.
+
+The paper is written in a very mathematical fashion which suits the paper's formal approach and makes the paper easy to read, when often it makes a paper more dense and convoluted.
+
+---
+
+[Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439) (**Timothy Hospedales, Antreas Antoniou, Paul Micaelli, Amos Storkey - 2020**)
 
 Hospedales et. al describe Meta-learning as a potential candidate to combat the data inefficiencies, poor knowledge transfer and unsupervised learning aspects of DNNs in research at the moment. There are different interpretations of the phrase 'meta-learning' but the paper focuses on **contemporary *neural network* meta-learning**. Meaning "algorithm learning, but focus on where this is achieved by end-to-end learning of an explicitly defined objective function (such as cross-entropy loss)".
 
+
+
+
+
+
+---
 
 # Dissertation Papers (ATT-GCN-LSTM / COVID19)
 ### This section reads in a rough order of increasing complexity (currently unfinished)

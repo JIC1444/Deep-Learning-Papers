@@ -15,7 +15,7 @@ My interests lie in the foundations of computer science and deep learning, as we
 
 ---
 
-[COMPUTING, MACHINERY AND INTELLIGENCE](https://doi.org/10.1093/mind/LIX.236.433) (**Alan Mathison Turing - 1950**) A paper lightyears ahead of its time by the one and only **Alan Turing** - the father of modern computer science. Completed 14 years after his paper outlining Turing Machines and just a few years after his groundbreaking work on breaking Enigma at Bletchley Park.
+[COMPUTING, MACHINERY AND INTELLIGENCE](https://doi.org/10.1093/mind/LIX.236.433) (**Alan Mathison Turing - 1950**) A paper lightyears ahead of its time by the great **Alan Turing** - the father of modern computer science. Completed 14 years after his paper outlining Turing Machines and just a few years after his groundbreaking work on breaking Enigma at Bletchley Park.
 
 Considering the field didn't formally exist yet, there were of course no real outstanding theoretical problems in computer science, hence the paper takes a more philosphical approach whilst also explaining the practicality of machine intelligence. Turing considers the question 'Can machines think?' taking a clear and logical tone to expertly defining the intricacies of _**"The Imitation Game"**_ - the test in which computers must successfully convince an interrogator that it is human. He then proceeds to define 9 objections to his 5 founding sections which define The Imitation Game and entail a brief history of the Analytical Engine and a general purpose computer.
 

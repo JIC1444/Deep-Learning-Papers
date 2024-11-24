@@ -101,6 +101,7 @@ The goal of MAML is to create a model which emulates a human's ability to learn 
 
 The paper is written in a very mathematical fashion which suits the paper's formal approach and makes the paper easy to read, when often it makes a paper more dense and convoluted.
 
+
 ---
 
 [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439) (**Timothy Hospedales, Antreas Antoniou, Paul Micaelli, Amos Storkey - 2020**)

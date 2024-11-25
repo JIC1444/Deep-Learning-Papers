@@ -91,6 +91,14 @@ The authors of the paper found very good results on a small dataset, with elasti
 
 ---
 
+# Graph Representation Learning Papers
+
+[The Surprising Power of Graph Neural Networks with Random Node Initialization](https://arxiv.org/pdf/2010.01179) (**Ralph Abboud, Ismail Ilkan Ceylan, Martin Grohe, Thomas Lukasiewicz - 2020**)
+As per the title, the paper explores the effect of initialising a graph when random node values are assigned to them (reffered to as RNI - or _random node initialisation_). Their main result supports this technique benefits Message-Passing Neural Networks (1.) (MPNNs) in all cases and beats the limitations of 1-WL (2.) of deterministic MPNNs.
+
+###### 1. _examples of MPNNs are Graph Convolutional Networks (GCNs), Graph attention networks (GATs) and graph isomorphism networks (GINs)_
+###### 2. Weisfeiler-Leman (WL) graph isomorphism test provides an upper bound on the expressiveness of MPNNs 
+
 # Meta-Learning and Learning Strategy Papers
 
 ---

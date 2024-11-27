@@ -1,5 +1,5 @@
 # Maths-CS-&-ML-Papers
-A collection of my favourite papers (in no particular order) I have read concerning mathematics, computer science and machine learning. 
+A collection of my favourite papers (in no particular order) I have read concerning mathematics, computer science and machine learning. All linked papers will eventually be explained/analysed!
 
 My interests lie in the foundations of computer science and deep learning, as well as deep learning applied to biology/epidemiology (which is the subject of my undergraduate dissertation). I am also interested in the idea of adaptive networks/meta-learning as they emulate the learning process of humans. Graphs are also a big interest of mine, so any research inspired by graphs interests me.
 
@@ -8,7 +8,9 @@ My interests lie in the foundations of computer science and deep learning, as we
 
 ---
 
-[COMPUTING, MACHINERY AND INTELLIGENCE](https://doi.org/10.1093/mind/LIX.236.433) (**Alan Mathison Turing - 1950**) A paper lightyears ahead of its time by the great **Alan Turing** - the father of modern computer science. Completed 14 years after his paper outlining Turing Machines and just a few years after his groundbreaking work on breaking Enigma at Bletchley Park.
+[COMPUTING, MACHINERY AND INTELLIGENCE](https://doi.org/10.1093/mind/LIX.236.433) (**Alan Mathison Turing - 1950**) 
+
+A paper lightyears ahead of its time by the great **Alan Turing** - the father of modern computer science. Completed 14 years after his paper outlining Turing Machines and just a few years after his groundbreaking work on breaking Enigma at Bletchley Park.
 
 Considering the field didn't formally exist yet, there were of course no real outstanding theoretical problems in computer science, hence the paper takes a more philosphical approach whilst also explaining the practicality of machine intelligence. Turing considers the question 'Can machines think?' taking a clear and logical tone to expertly defining the intricacies of _**"The Imitation Game"**_ - the test in which computers must successfully convince an interrogator that it is human. He then proceeds to define 9 objections to his 5 founding sections which define The Imitation Game and entail a brief history of the Analytical Engine and a general purpose computer.
 
@@ -20,13 +22,17 @@ _**"We can only see a short distance ahead, but we can see plenty there that nee
 
 ---
 
-[ImageNet classification with deep convolutional neural networks](https://doi.org/10.1145/3065386) (**Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton - 2012**) The paper is synonymous with the modern deep learning revolution, it demonstrated the power of deep convolutional neural networks (CNNs), achieving performance on the ImageNet dataset previously unheard of. AlexNet was key in sparking widespread interest and research funding investments in deep learning and the authors of the paper are still making huge strides in deep learning, notably Geoffrey Hinton won the 2024 Nobel Prize in Physics and Ilya Sutskever was chief scientist at OpenAI.
+[ImageNet classification with deep convolutional neural networks](https://doi.org/10.1145/3065386) (**Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton - 2012**) 
+
+The paper is synonymous with the modern deep learning revolution, it demonstrated the power of deep convolutional neural networks (CNNs), achieving performance on the ImageNet dataset previously unheard of. AlexNet was key in sparking widespread interest and research funding investments in deep learning and the authors of the paper are still making huge strides in deep learning, notably Geoffrey Hinton won the 2024 Nobel Prize in Physics and Ilya Sutskever was chief scientist at OpenAI.
 
 The model is of course by today's standards quite shallow, with 5 layers however the reason for the groundbreaking performance is highlighted in the prologue - the computational power and the significant amount of labelled data simply wasn't availiable in the 1980's, when it was deemded that training neural networks initialised with random wieghts was too monumentous of a task. Many famous techniques for deep learning were outlined in this paper - namely **dropout**, **ReLU** and **scale** (while not strictly a technique it is arguably the most important drivers of the most powerful models today). Additionally, the paper follows a logical flow and is nice to read visually, a great introductory paper for those just getting into the field of deep learning.
 
 ---
 
-[Attention is all you need](https://doi.org/10.48550/arXiv.1706.03762) (**Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin - 2017**) The Google DeepMind paper responisble for the architecture dominant in deep learning today, the transformer architecture has been a tremendous leap in natural language processing (NLP) and many other fields.
+[Attention is all you need](https://doi.org/10.48550/arXiv.1706.03762) (**Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin - 2017**) 
+
+The Google DeepMind paper responisble for the architecture dominant in deep learning today, the transformer architecture has been a tremendous leap in natural language processing (NLP) and many other fields.
 
 "Self-attention is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence", essentially looking at the elements which heavily influence the results in the data. The architecture's strengths lie partly in the encoding (and decoding) of the data into 512-dimensional vectors - this allows similar elements of the data to lie close to one another, allowing complex pattern recognition to occur, similar to a principal components analysis (PCA). However, these vectors are dynamic - changing as the model learns, differentiating it from the PCA.
 
@@ -44,12 +50,68 @@ Overall, a great paper, however the query, keys and values concepts are slightly
 
 ---
 
+[Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2?fromPaywallRec=false) (**John Jumper et. al. - 2021**) 
+
+With over 19,000 citations, this highly impactful paper details the latest developments in the Alphfold 2 model, which allowed more physical and biological context to be introduced to the model. This model in the --- competition beat the next best model by around 3 times!
+
+The model architecture:
+
+<img width="887" alt="Screenshot 2024-11-27 at 16 27 20" src="https://github.com/user-attachments/assets/2d8b97fd-0f6f-4b06-af1f-4ba624879e2e">
+
+
+### How the model works 
+
+_1. **Database search and preprocessing**_
+- An input sequence of amino acids is input into the model.
+- From here there are three prongs:
+- Prong 1:
+  - The model compares this sequence to those similar in databases of other protein sequences.
+  - The sequences extracted are used to generate a Multiple Sequence Alignment (MSA).
+  - From this MSA, an initial representation is created.
+- Prong 2:
+  - Pairing of the input sequence also occurs - this means amino acid i will be paired with itself and every other amino acid in the sequence, this happens for all i amino acids in the input.
+- Prong 3:
+  - Searches a structural database for experimentally determined sequence template structured.
+- Prong 2 and 3 then combine to create an initial pair representation of the input sequence - this represents the relationship between every pair of amino acids within the output protein.
+
+
+_2. **The Evoformer**_
+- The Evoformer is a neural network, which is specifically designed for Alphafold2. The input to this part is as we left off in 1. - the MSA and the pair representation.
+- There are essentially two 'towers' which communicate with one another. The MSA representation tower and the pair representation tower.
+- In the MSA representation tower, the network prioritises looking for row-wise patterns between amino acid pairs in the data.
+- It then considers column-wise patterns which calulates the weight that each amino acid holds in the shaping of the other proteins in the MSA.
+- The pair representation tower then evaluates the relationship between every pair of amino acids.
+- It does this through the re-structuring of the data into nodes and edges (i.e a node is an amino acid and an edge is the distance between the two amino acids (_bidirectional_)). It creates triangles between 3 amino acids and attempts to satisfy the triangle inequality - this is what gives Alphafold2 its biologically and physically realistic coordinates.
+- As this occurs, before the pair representation tower calculates the triangle inequality values, the MSA representation tower updates the edges in the pair representation tower with information found in that run of calculations.
+- The first row of the MSA tower is the sequence the model is trying to predict the shape of, hence the results from the pair representation tower is now the first row of the MSA.
+- The step before then repeats over and over - exactly 48 times each - leading to the refined MSA and pair representation.
+
+
+_3. **The Stucture Module**_
+- Another neural network which performs rotations and translations on each amino acids, while applying physical and chemical constraints.
+- This leads to an inital guess of the 3D protein structure.
+
+- This result is then input back through the Evoformer and the Struture Module 3 more times, arriving at the final result of 3D atomic coordinates of the input sequence!
+
+This model is an absolute behemoth, [here](https://www.youtube.com/watch?v=7q8Uw3rmXyE) is a brilliant video depicting it. 
+
+---
+
+[Accurate structure prediction of biomolecular interactions with AlphaFold 3](https://www.nature.com/articles/s41586-024-07487-w) (**Josh Abramson et. al. - 2024**) 
+
+This paper follows from above, defining the model architecture for **Alphafold3** and won the **Nobel Prize for Chemistry** this year (2024)! 
+
+
+---
+
 [Long Short-Term Memory](https://doi.org/10.1162/neco.1997.9.8.1735) (**Sepp Hochreiter, Jürgen Schmidhuber - 1997**)
+
 A highly influential architecture which eventually led to the transformer (from paper above), a variant of a recurrent neural network (RNN), but with a memory block, which significantly enhanced performance.
 
 ---
 
 [A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) (**Claude Shannon - 1948**)
+
 In this paper Shannon establishes the field of Information Therory (there were earlier works in the 1920's). I have personally first encountered Shannon's work in an [ecology data analysis project](https://github.com/JIC1444/Spatial-Analysis-of-Microorganisms-Scandes) where his equation for _Shannon's Diversity index_ is derived from his equation in entropy, defined in this very paper.
 
 The effects of this paper were felt in many fields, of course Information Theory may not exist in the same way without Shannon, but also the equation (below) defined in the paper reaches many corners of science, to name a few: 
@@ -93,17 +155,20 @@ The authors of the paper found very good results on a small dataset, with elasti
 
 # Graph Representation Learning Papers
 
+[GraphSAGE: Inductive Representation Learning on Large Graphs](https://arxiv.org/abs/1706.02216) (**William L. Hamilton, Rex Ying, Jure Leskovec - 2017**)
+
+---
+
+[How Powerful are Graph Neural Networks?](https://arxiv.org/abs/1810.00826) (**Keyulu Xu, Weihua Hu, Jure Leskovec, Stefanie Jegelka - 2018**)
+
+---
+
 [The Surprising Power of Graph Neural Networks with Random Node Initialization](https://arxiv.org/pdf/2010.01179) (**Ralph Abboud, Ismail Ilkan Ceylan, Martin Grohe, Thomas Lukasiewicz - 2020**)
-As per the title, the paper explores the effect of initialising a graph when random node values are assigned to them (reffered to as RNI - or _random node initialisation_). 
- _examples of MPNNs are Graph Convolutional Networks (GCNs), Graph attention networks (GATs) and graph isomorphism networks (GINs)_
-###### 2. Weisfeiler-Leman (WL) graph isomorphism test provides an upper bound on the expressiveness of MPNNs 
 
-Their main result supports this technique benefits Message-Passing Neural Networks (1.) (MPNNs) in all cases and beats the limitations of 1-WL (2.) of deterministic MPNNs.
+As per the title, the paper explores the effect of initialising a with random node values are assigned to them (reffered to as **RNI** or _random node initialisation_). Their main result proves that **MPNNs with RNI are universal**, this is the first known universality result for memory efficient GNNs. It is stated that this is a significant improvement over the 1-WL limit of standard MPNNs.
 
-- We prove that MPNNs with RNI are universal, while being permutation-invariant in expectation. This is a significant improvement over the 1-WL limit of standard MPNNs and, to our knowledge, a first universality result for memory efficient GNNs.
-- We introduce two carefully designed datasets, EXP and CEXP, based on graph pairs only distinguishable by 2-WL or higher, to rigorously evaluate the impact of RNI.
-- We analyze the effects of RNI on MPNNs on these datasets, and observe that (i) MPNNs with RNI closely match the performance of higher-order GNNs, (ii) the improved performance of MPNNs with RNI comes at the cost of slower convergence, and (iii) partially randomizing initial node features improves model convergence and accuracy.
-- We additionally perform the same experiments with analog sparser datasets, with longer training, and observe a similar behavior, but more volatility.
+The paper also introduces two datasets, EXP and CEXP, based on graph pairs only distinguishable by 2-WL or higher, this can be used to rigorously evaluate the impact of RNI and is released for the use of everyone. Using these datasets, MPNNs with RNI were shown to perform around as well as higher-order GNNs (i.e GNNs which look beyond pairwise relationships). It was observed that MPNNs with RNI take more time to converge however **partial** RNI improved the model convergence and the accuracy!
+
 
 
 
@@ -123,8 +188,6 @@ The paper is written in a very mathematical fashion which suits the paper's form
 [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439) (**Timothy Hospedales, Antreas Antoniou, Paul Micaelli, Amos Storkey - 2020**)
 
 Hospedales et. al describe Meta-learning as a potential candidate to combat the data inefficiencies, poor knowledge transfer and unsupervised learning aspects of DNNs in research at the moment. There are different interpretations of the phrase 'meta-learning' but the paper focuses on **contemporary *neural network* meta-learning**. Meaning "algorithm learning, but focus on where this is achieved by end-to-end learning of an explicitly defined objective function (such as cross-entropy loss)".
-
-
 
 
 

@@ -99,7 +99,7 @@ This model is an absolute behemoth, [here](https://www.youtube.com/watch?v=7q8Uw
 
 [Accurate structure prediction of biomolecular interactions with AlphaFold 3](https://www.nature.com/articles/s41586-024-07487-w) (**Josh Abramson et. al. - 2024**) 
 
-This paper follows from above, defining the model architecture for **Alphafold3** and won the **Nobel Prize for Chemistry** this year (2024)! 
+This paper follows from above, defining the model architecture for **Alphafold3** and won the **Nobel Prize for Chemistry** this year (2024)! The new Alphafold3 architecture acheives a much more generalised approach, extending the use of Alphafold beyond proteins. The model main driver of the success of the model is the diffusion element.
 
 
 ---
